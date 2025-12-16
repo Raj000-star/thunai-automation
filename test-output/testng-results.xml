@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-12-15T18:15:05 IST" name="Default suite" finished-at="2025-12-15T18:15:59 IST" duration-ms="53811">
+    <groups>
+    </groups>
+    <test started-at="2025-12-15T18:15:05 IST" name="Default test" finished-at="2025-12-15T18:15:59 IST" duration-ms="53811">
+      <class name="Thunai_Application.Test.common_Agents_Test">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Thunai_Application.Test.common_Agents_Test@41d477ed]" started-at="2025-12-15T18:15:05 IST" name="setUp" finished-at="2025-12-15T18:15:15 IST" duration-ms="10502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="create_agent()[pri:0, instance:Thunai_Application.Test.common_Agents_Test@41d477ed]" started-at="2025-12-15T18:15:15 IST" name="create_agent" finished-at="2025-12-15T18:15:58 IST" duration-ms="42897" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_agent -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Thunai_Application.Test.common_Agents_Test@41d477ed]" started-at="2025-12-15T18:15:58 IST" name="tearDown" finished-at="2025-12-15T18:15:59 IST" duration-ms="362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Thunai_Application.Test.common_Agents_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
