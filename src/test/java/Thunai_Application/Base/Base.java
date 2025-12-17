@@ -28,7 +28,7 @@ public class Base {
 			}
 
 			driverbase.manage().window().maximize();
-			driverbase.get(u.readExcelData("url"));//testing...
+			driverbase.get(u.readExcelData("url"));//testing...done
 
 		}
 		return driverbase;
