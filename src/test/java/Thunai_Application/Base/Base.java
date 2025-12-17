@@ -24,7 +24,7 @@ public class Base {
 			} else if (browser.equalsIgnoreCase("edge")) {
 				driverbase = new EdgeDriver();
 			} else {
-				driverbase = new ChromeDriver(); // default
+				driverbase = new ChromeDriver(); // default..
 			}
 
 			driverbase.manage().window().maximize();
