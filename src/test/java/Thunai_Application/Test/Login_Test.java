@@ -9,6 +9,7 @@ import static org.testng.Assert.assertTrue;
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeClass;
@@ -18,12 +19,12 @@ import org.testng.annotations.AfterClass;
 
 public class Login_Test extends Base {
 
+	WebDriver driver;
 	Login_Page loginPage;
 	Utility utility = new Utility();
 
 	@BeforeClass
 	public void setup() throws Throwable {
-		// utility.loadExcelData();
 
 		loginPage = new Login_Page(getDriver());
 	}
@@ -35,22 +36,20 @@ public class Login_Test extends Base {
 
 		loginPage.clickOkButton();
 
-		// loginPage.clickOkButton();
-
 		loginPage.clickEmailField();
 
 		loginPage.clickContinueButtonAfterEmail();
-
+		
 		loginPage.selectTenant();
-		loginPage.clickPasswordField();
-		loginPage.clickContinueButtonAfterPassword();
 
-		// Utility.takeScreenshot(getDriver(), "LoginPage");
+		loginPage.clickPasswordField();
+		
+		loginPage.clickContinueButtonAfterPassword();
 
 		// assertion
 
-		// Assert.assertTrue(loginPage.getLogo().isDisplayed(), "Logo is not displayed
-		// on home page..");
+		Assert.assertEquals(driver.getTitle(), "Thunai | Login");
+		Assert.assertTrue(loginPage.getLogo().isDisplayed(), "Logo is not displayedon home page..");
 
 	}
 

@@ -25,16 +25,8 @@ public class Login_Page extends Base {
 	Utility utility = new Utility();
 	Base base = new Base();
 
-	/*
-	 * @FindBy(xpath = ("//button[normalize-space()='Okay']")) private WebElement
-	 * ok_Button;
-	 */
-
 	@FindBy(xpath = ("(//img[@class='w-[120px] mb-6'])[1]"))
 	private WebElement logo;
-
-	@FindBy(xpath = ("//img[@alt='Welcome']"))
-	private WebElement login_Page_Images;
 
 	@FindBy(xpath = ("//h1[normalize-space()='Welcome Back!']"))
 	private WebElement welcomeback_Text;
@@ -51,11 +43,9 @@ public class Login_Page extends Base {
 	@FindBy(xpath = ("//button[.//*[contains(text(),'Continue')]]\r\n"	+ ""))
 	private WebElement continue_Button_1;
 
-	
 	  @FindBy(xpath = "//li[normalize-space()='Thunai QA Team']") private
 	  WebElement thunai_QA_Team;
 	 
-
 	@FindBy(xpath = "//select[@formcontrolname='tenant_id']")
 	private WebElement tenantDropdown;
 
@@ -191,15 +181,13 @@ public class Login_Page extends Base {
 	
 	//Accessors (only included if necessary)
 		
-	   // public WebElement getOk_Button()                                                              {return ok_Button;}
+	   
 		public WebElement getLogo()                                                                   { return logo; }
-		public WebElement getLogin_Page_Images()                                                      { return login_Page_Images; }
 		public WebElement getWelcomeback_Text()                                                       { return welcomeback_Text; }
 		public WebElement getEmail_Text()                                                             { return email_Text; }
 		public WebElement getEmail_Field()                                                            { return email_Field; }
 		public WebElement getPlease_Enter_Your_Email_Text()                                           { return please_Enter_Your_Email_Text; }
 		public WebElement getText()                                                                   { return text;}
-		//public List<WebElement> getTenant_id()                                                        {return tenant_id;}
 		public WebElement getContinue_Button_1()                                                      { return continue_Button_1; }
 		public WebElement getOr_Continue_With_Text()                                                  { return or_Continue_With_Text; }
 		public WebElement getContinue_With_Google_Button_1()                                          { return continue_With_Google_Button_1; }
